@@ -5,10 +5,15 @@ import About from './components/About'
 import Contact from './components/Contact'
 import NotFound from './components/NotFound'
 import Home from './components/Home'
+import PrivateComponent1 from './components/PrivateComponent1';
+import PrivateComponent2 from './components/PrivateComponent2';
+import MyPrivateRouter from './MyPrivateRouter'
 
 const MyRouter = () => {
 
   const someVar = true;
+
+
 
   return (
     <Switch>
@@ -21,6 +26,7 @@ const MyRouter = () => {
         path="/contact"
         render={props => <Contact {...props} extra={someVar} />}
       />
+
       <Route component={NotFound}/>
     </Switch>
   )

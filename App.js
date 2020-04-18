@@ -6,11 +6,12 @@ import About from './components/About'
 import Contact from './components/Contact'
 import NotFound from './components/NotFound'
 import MyRouter from './MyRouter'
+import MyPrivateRouter from './MyRouter'
 
 function App(props) {
   return (
     <BrowserRouter>
-      <MyRouter/>
+      <MyPrivateRouter/>
     </BrowserRouter>
   );
 }
